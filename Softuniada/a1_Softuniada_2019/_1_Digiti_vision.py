@@ -1,4 +1,4 @@
-# Version 188.0 -------------------------Version 2.0---------------------90/100 = Error 06: RuntimeError
+# Version 2.0 -------------------------Version 2.0---------------------90/100 = Error 06: RuntimeError
 def permute(nums):
     result_perms = [[]]
     for num in nums:
