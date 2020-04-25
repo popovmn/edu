@@ -25,7 +25,7 @@ elif adults:
     print('drink whisky')
 
 
-#3.  Leonardo DiCaprio Oscars
+#3. Leonardo DiCaprio Oscars
 n = int(input())
 if n == 88:
     print('Leo finally won the Oscar! Leo is happy')
@@ -116,8 +116,3 @@ else:
 
 '''
 
-year = int(input())
-length_year = len(str(year))
-
-while length_year == 4:
-    while year[0] !=
