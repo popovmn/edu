@@ -1,9 +1,0 @@
-cd
-cd PycharmProjects/Softuni
-git init
-git add .
-git commit -m "First commit"
-git remote add origin https://github.com/andriiburka/edu.git
-git remote -v
-git push -u origin master
-cd
