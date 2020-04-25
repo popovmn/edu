@@ -2,6 +2,6 @@ cd
 cd PycharmProjects/Softuni
 git add .
 git commit -m "First commit"
-git push -u origin master
+git push -u origin master --force
 cd
 
