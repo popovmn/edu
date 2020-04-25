@@ -1,13 +1,4 @@
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
+
 count_of_students = int(input())
 count_of_lectures = int(input())
 initial_bonus = int(input())
@@ -15,7 +6,7 @@ initial_bonus = int(input())
 all_attends = []
 all_bonuses = []
 
-for s in range(1, count_of_students + 1):  # count 5 students
+for s in range(1, count_of_students + 1):
     attendances = int(input())
     all_bonuses.append(round(attendances / count_of_lectures * (5 + initial_bonus)))
     all_attends.append(attendances)
