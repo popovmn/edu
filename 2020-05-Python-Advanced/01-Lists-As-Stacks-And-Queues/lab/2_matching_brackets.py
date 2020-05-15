@@ -15,11 +15,11 @@ if __name__ == '__main__':
 
 
 
-# COMPREHENSION
-expression = input()
-stack = []
-[stack.append(i) if expression[i] == '(' else print(expression[stack.pop():i + 1]) if expression[i] == ')' else 'idle'
- for i in range(len(expression))]
+# # COMPREHENSION
+# expression = input()
+# stack = []
+# [stack.append(i) if expression[i] == '(' else print(expression[stack.pop():i + 1]) if expression[i] == ')' else 'idle'
+#  for i in range(len(expression))]
 
 
 

@@ -1,26 +1,48 @@
 # QUEUES
 from collections import deque
 
-total_liters = int(input())
-people = deque()
+def add_liters(tl, c):
+    pass
 
-while True:
-    # Name or END command
-    cmd = input()
-    if cmd == "Start":
-        while True:
-            cmd2 = input()
-            if cmd2 == "End":
-                print(f"{total_liters} liters left")
-                break
+def subtract_liters():
+    pass
 
-            if "refill" in cmd2:
-                cmd2 = cmd2.split()[1]
-                total_liters += int(cmd2)
-            elif cmd2.isdigit():
-                print(f"{people[0]} got water")
-                people.popleft()
-                print(people)
-                total_liters -= int(cmd2)
-    else:
-        people.append(cmd)
+
+def start():
+    total_liters = int(input())
+    people = deque()
+    while True:
+        cmd = input()
+        if cmd.startswith('Start'):
+
+            while people:
+                cmd = input()
+
+                if cmd.startswith('End'):
+                    break
+
+                if cmd.startswith('refill'):
+                    total_liters += int(cmd.split()[1])
+                    continue
+
+                elif cmd.isdigit():
+                    if total_liters < int(cmd):
+                        print(f"{people.popleft()} must wait")
+                    else:
+                        total_liters -= int(cmd)
+                        print(f"{people.popleft()} got water")
+                        # трябва да е people[0] вместо people.popleft()
+                        # поредното глупаво условие
+            print(f"{total_liters} liters left")
+            break
+        else:
+            people.append(cmd)
+
+
+if __name__ == '__main__':
+    start()
+
+
+
+
+
